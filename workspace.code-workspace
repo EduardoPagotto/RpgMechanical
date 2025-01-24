@@ -58,6 +58,7 @@
 			"editor.wordWrap": "wordWrapColumn",
 			"editor.wordWrapColumn": 80
 		},
+		// Error lens
 		"errorLens.enabled": true,
 		"errorLens.delay": 1000,
 		"errorLens.enabledDiagnosticLevels": [

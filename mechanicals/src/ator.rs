@@ -22,7 +22,7 @@ impl Ator {
             xp_base,
             incremento,
             ataque: base_bat,
-            hp: Healt::new(String::from("HP"), base_hp * 3),
+            hp: Healt::new(String::from("HP"), base_hp),
             xp: Experience::new(String::from("XP"), base_bat * 3),
         }
     }
@@ -73,10 +73,10 @@ impl Ator {
             return true;
         }
 
-        let oponente_hp: &mut Healt = oponente.get_hp();
-        if oponente_hp.defesa(self.ataque) {
-            return true;
-        }
+        // let oponente_hp: &mut Healt = oponente.get_hp();
+        // if oponente_hp.defesa(self.ataque) {
+        //     return true;
+        // }
 
         println!(">>>>> {} was killed\n", oponente.get_name());
 

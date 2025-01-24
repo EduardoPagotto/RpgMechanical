@@ -1,14 +1,14 @@
 #[allow(dead_code)]
 #[derive(Default, Debug, PartialEq)]
-pub struct Expirience {
+pub struct Experience {
     pub name: String,
     pub value: i32,
     pub max: i32,
 }
 
-impl Expirience {
+impl Experience {
     pub fn new(name: String, max: i32) -> Self {
-        Expirience {
+        Experience {
             name,
             value: 1,
             max,

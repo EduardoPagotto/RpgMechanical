@@ -1,4 +1,4 @@
 pub mod healt;
-pub mod expirience;
+pub mod experience;
 pub mod actions;
 pub mod ator;

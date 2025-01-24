@@ -1,4 +1,4 @@
-use crate::{actions::Actions, expirience::Expirience, healt::Healt};
+use crate::{actions::Actions, experience::Experience, healt::Healt};
 
 #[derive(Default)]
 pub struct Ator {
@@ -8,7 +8,7 @@ pub struct Ator {
     incremento: i32,
     ataque: i32,
     hp: Healt,
-    xp: Expirience,
+    xp: Experience,
 }
 
 impl Ator {
@@ -23,7 +23,7 @@ impl Ator {
             incremento,
             ataque: base_bat,
             hp: Healt::new(String::from("HP"), base_hp * 3),
-            xp: Expirience::new(String::from("XP"), base_bat * 3),
+            xp: Experience::new(String::from("XP"), base_bat * 3),
         }
     }
     pub fn get_name(&self) -> &str {
@@ -38,7 +38,7 @@ impl Ator {
         &mut self.hp
     }
 
-    // pub fn get_xp(&mut self) -> &mut Expirience {
+    // pub fn get_xp(&mut self) -> &mut experience {
     //     &mut self.xp
     // }
 

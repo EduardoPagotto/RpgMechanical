@@ -1,6 +1,5 @@
+use crate::experience::Experience;
 use crate::healt::Healt;
-use crate::expirience::Expirience;
-
 
 pub trait Actions {
     //fn new(name: String, max: i32) -> Self;
@@ -28,9 +27,9 @@ impl Actions for Healt {
     }
 }
 
-impl Actions for Expirience {
+impl Actions for Experience {
     // fn new(name: String, max: i32) -> Self {
-    //     Expirience::new(name, max)
+    //     experience::new(name, max)
     // }
 
     fn level_up(&mut self, value: i32) {

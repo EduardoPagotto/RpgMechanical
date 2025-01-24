@@ -1,5 +1,6 @@
-use crate::{expirience::Expirience, healt::Healt, actions::Actions};
+use crate::{actions::Actions, expirience::Expirience, healt::Healt};
 
+#[derive(Default)]
 pub struct Ator {
     name: String,
     level: i32,

@@ -1,4 +1,5 @@
 #[allow(dead_code)]
+#[derive(Default, Debug, PartialEq)]
 pub struct Healt {
     pub name: String,
     pub value: i32,
